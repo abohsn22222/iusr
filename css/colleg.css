@@ -1,0 +1,143 @@
+
+.bod {
+    background-color:#3b1073 ;
+}
+
+
+
+
+.coll1 {
+    grid-area: co1;
+
+}
+
+.coll2 {
+    grid-area: co2;
+}
+
+.coll3 {
+    grid-area: co3;
+
+}
+
+.coll4 {
+    grid-area: co4;
+}
+
+.coll5 {
+    grid-area: co5;
+}
+
+.coll6 {
+    grid-area: co6;
+}
+
+.coll7 {
+    grid-area: co7;
+}
+
+.coll8 {
+    grid-area: co8;
+}
+
+.continar {
+    display: grid;
+    height: 80%;
+    gap: 10px;
+    justify-content: space-around;
+    color: blue;
+    background-color: #3b1073;
+    margin: 0 120px 0 120px;
+    margin-bottom: 0px;
+    box-shadow: 0 20px 25px rgba(1 1 1 / 60%);
+    border-radius: 50px;
+
+    grid-template-areas:
+        'co1 co2 co3 co4'
+        'co5 co6 co7 co8';
+
+}
+
+.continar>div {
+    text-align: center;
+    margin: 5%;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+    padding: 40px;
+    font-size: 30px;
+    background-color: rgb(209, 179, 123);
+
+
+}
+
+
+.na:hover {
+    color: red;
+}
+
+
+.cc:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+.mm:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+#im {
+    margin: 4px;
+    width: 170px;
+    height: 170px;
+
+}
+
+#imm {
+
+    margin: 4px;
+    width: 320px;
+    height: 120px;
+
+}
+
+.mam {
+    text-decoration: no;
+}
+
+.ma1 {
+    grid-area: m1;
+}
+
+.ma2 {
+    grid-area: m2;
+}
+
+.ma3 {
+    grid-area: m3;
+}
+
+.ma4 {
+    grid-area: m4;
+}
+
+.ma5 {
+    grid-area: m5;
+}
+
+.ma6 {
+    grid-area: m6;
+}
+
+.ma7 {
+    grid-area: m7;
+}
+
+.ma8 {
+    grid-area: m8;
+}
+
+.bod{
+padding-top: 0;
+    padding-bottom: 0;
+}

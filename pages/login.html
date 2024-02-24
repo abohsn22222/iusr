@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/log.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="box">
+        <span class="borderLine"></span>
+    <form onsubmit=" return login()">
+        <h2>تسجيل الدخول</h2>
+        <div class="inputBox">
+            <input type="text" required="required" id="email">
+            <span>اسم المستخدم</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" required="required" id="password">
+            <span>كلمة السر</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="#">نسيت كلمة السر ؟</a>
+        </div>
+
+        <input type="submit" value="تسجيل الدخول" >
+</div>
+
+    </form>
+    <script src="../javascript/login.js"></script>
+
+</body>
+</html>

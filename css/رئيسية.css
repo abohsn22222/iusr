@@ -1,0 +1,422 @@
+@font-face {
+    font-family: FontName;
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: FontName;
+}
+:root {
+    --background-imag:url(../images/iusr\ .jpg) ;
+    --white-color : white ;
+    --black-color :black;
+    --icon-color : #333;
+    --card-icon-color : blue;
+    --details-color :darkblue;
+}
+.dark-mode {
+    --background-imag:url(../images/iusrrr.jpg) ;
+    --white-color:  rgb(24, 23, 23);
+    --black-color: white;
+    --icon-color : white;
+    --card-icon-color :white;
+    --details-color : red;
+}    
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: rgb(40, 0, 218);
+
+}
+input::placeholder{
+    text-align: right;
+    font-size: large;
+}
+
+.logo {
+    color:var(--white-color);
+    font-weight: 200;
+    font-size: 1em;
+}
+.navi a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+.navi a:hover {
+    color:var(--black-color);
+}
+@media (max-width:767px){
+    header {
+        padding: 10px 20px;
+    }
+    .logo {
+        font-size: 0.4em;
+    }
+    header input{
+        width: 170px;
+    }
+    .navi a {
+        font-size: 1.5em;
+        padding-left: 23px;
+    }
+    header i {
+        font-size: 20px;
+        padding-left: 12px;
+    }
+}
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--background-imag) no-repeat; 
+    background-size: 400px 400px;
+    background-position: center;
+    background-color: var(--white-color);
+}
+.main div {
+    background: linear-gradient(to left, #00ffff 0%, #f14800 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3em;
+    font-weight: 1000;
+}
+.main div span {
+    background: linear-gradient(to right, #30cfd0 0%, #fa4b00 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.main div h2 {
+    background: linear-gradient(to right, #15b6b6 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.main div h3 {
+    background: linear-gradient(to right, #8e685a 0%, #1e5998 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.main p {
+    font-size: 20px;
+    font-weight: 1000;
+    background: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+    text-align: center
+}
+.main .btn {
+    color: var(--white-color);
+    background-color: blue;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.9375em 2.1em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+.main .btn:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+.social a {
+    color: var(--icon-color);
+    font-size: 1.2em;
+    margin: 10px;
+    transition: 0.5s ease;
+}
+.main .social a:hover {
+    background-color: rgb(40, 30, 30);
+    transform: scale(1.1);
+}
+@media (max-width:767px){
+    .main {
+        width: 240%;
+        background-size: 300px 300px;
+        background-position-x:70% ;
+    }
+    .main div h2,
+    .main div h3,
+    .main div h1,
+    .main div h1 span,
+    .main p {
+        color: #15b6b6;
+    }
+}
+.title {
+    display: grid;
+    justify-content: center;
+    color: rgba(255, 0, 0, 0.702);
+    background-color: #330867;
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+}
+.content {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight nine"
+    ;
+}
+.aboutt {
+    background-image: url(../images/f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    /* background-color: rgba(255, 255, 255, 0.876); */
+    background-color: var(--white-color);
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 40%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.info a {
+    text-decoration: none;
+}
+.info a:hover {
+    color: red;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+.cardon {
+    grid-area: one;
+}
+.cardtw {
+    grid-area: two;
+}
+.cardth {
+    grid-area: three;
+}
+.cardfo {
+    grid-area: four;
+}
+.cardfi {
+    grid-area: five;
+}
+.cardsi {
+    grid-area: six;
+}
+.cardsev {
+    grid-area: seven;
+}
+.cardei {
+    grid-area: eight;
+}
+.cardnin {
+    grid-area: nine;
+}
+.icon {
+    color: var(--card-icon-color);
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3 {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p {
+    color: var(--black-color);
+}
+@media (max-width:767px){
+.aboutt{
+    overflow: hidden;
+    width: 240%;
+}
+.aboutt .title{
+    font-size: 2em;
+    align-items: center;
+    height: 80px;
+    width: 500%;
+    margin-top: -110px;
+    margin-bottom: 50px;
+    margin-left: -380px;
+    border-radius: 25px;
+}
+.card {
+    width: 18em;
+}
+}
+.new {
+   background-image: url(../images/e.png);
+    background-size: cover;
+}
+.new .content {
+    margin-top: 30px;
+}
+.pcard {
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    min-height: 15em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.pcard:hover {
+    transform: scale(1.1);
+}
+.pcard:hover .primg {
+    opacity: 0.8;
+}
+.primg img {
+    width: 100%;
+}
+.prinfo {
+    padding: 1em;
+}
+.prcategory {
+    font-size: 1.2em;
+    font-size: 700;
+    color:var(--black-color);
+}
+.prtitle {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.details {
+    text-decoration: none;
+    color:var(--details-color);
+}
+.details:hover {
+    color: #330867;
+}
+.prtitle span{
+    color: var(--black-color);
+}
+@media (max-width:767px){
+    .new {
+        width: 240%;
+     }
+     .pcard {
+        width: 26em;
+    }
+    .new .content {
+        grid-template-areas:
+            "one two "
+            "three four"
+            " five six "
+            "seven eight "
+        ;
+    }
+}
+.containerr{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color:var(--white-color);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: var(--black-color);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color:var(--white-color);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color:var(--black-color);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+    .footer-col{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width:100%;
+  }
+  }
+

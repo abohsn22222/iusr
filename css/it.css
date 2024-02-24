@@ -1,0 +1,108 @@
+.tech1{
+    grid-area: t1;
+   }
+   .tech2{
+    grid-area: t2;
+   }.tech3{
+    grid-area: t3;
+   }.tech4{
+    grid-area: t4;
+   }.tech5{
+    grid-area: t5;
+   }.tech6{
+    grid-area: t6;
+   }.tech7{
+    grid-area: t7;
+   }.tech8{
+    grid-area: t8;
+   }.tech9{
+    grid-area: t9;
+   }.tech10{
+    grid-area: t10;
+   }.tech11{
+    grid-area: t11;
+   }.tech12{
+    grid-area: t12;
+   }
+
+.teacher{
+
+    display: grid;
+    height: 40%;
+
+    justify-content: space-around;
+    color: blue;
+    background-color: #3b1073;
+    margin: 0 120px 0 120px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+
+    grid-template-areas:
+    't1 t2 t3'
+    't4 t5 t6'
+    't7 t8 t9'
+    't10 t11 t12'
+}
+.teacher>div{
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+    padding: 7px;
+    font-size: 20px;
+    background-color: silver;
+    width: 350px;
+
+
+
+}
+.teacher>div:hover{
+color: #f14800;
+}
+#teche{
+   display: inline; 
+   border-radius: 25% ;
+   background-color: rgb(191, 219, 236);
+    
+}
+
+
+.list  {
+    margin: 0  ;
+
+    border-radius: 20px;
+    background-color:lightblue;
+    
+
+}
+.aa :hover{
+    color:red;
+}
+.aa{
+    text-decoration: none;  
+}
+.alll{
+    text-align: center;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 20px ;
+    
+}
+
+.cors{
+   font-size: 35px; 
+   background-color: brown;
+   border-radius: 40px;
+   display: inline;
+    background-color: rgb(255, 145, 0);
+}
+.foto{
+    background-image: url(images/iusr\ .jpg);
+}
+
+ pre{
+    padding: 20px;
+   
+   
+   }

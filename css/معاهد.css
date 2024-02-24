@@ -1,0 +1,119 @@
+
+.bodd {
+    margin: -50px -10px -20px -10px;
+    background-color:#3b1073 ;
+}
+
+
+.na:hover {
+    color: red;
+}
+
+
+.cc:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+.mm:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+}
+
+#im {
+    margin: 4px;
+    width: 170px;
+    height: 170px;
+
+}
+
+#imm {
+
+    margin: 4px;
+    width: 320px;
+    height: 120px;
+
+}
+
+.mam {
+    text-decoration: none;
+}
+
+.ma1 {
+    grid-area: m1;
+}
+
+.ma2 {
+    grid-area: m2;
+}
+
+.ma3 {
+    grid-area: m3;
+}
+
+.ma4 {
+    grid-area: m4;
+}
+
+.ma5 {
+    grid-area: m5;
+}
+
+.ma6 {
+    grid-area: m6;
+}
+
+.ma7 {
+    grid-area: m7;
+}
+
+.ma8 {
+    grid-area: m8;
+}
+
+.bodd{
+padding-top: 0;
+    padding-bottom: 0;
+}
+
+.continarM {
+    
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    height: 40%;
+    justify-content: space-evenly;
+    color: blue;
+    background-color:#3b1073; 
+   
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+
+    grid-template-areas:
+        'm1 m2'
+        'm3 m4'
+        'm5 m6'
+        'm7 m8';
+
+
+}
+
+.continarM>div {
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 60%);
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(209, 179, 123);
+    width: 350px;
+
+
+}
+
+.continarM {
+  
+    height: max-content;
+}
+
+   
